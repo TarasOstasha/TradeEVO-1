@@ -1,61 +1,80 @@
-.contact {
-  background-image: url(../images/footer_bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+.footer__top {
+  background: #333333;
+  padding: 107px 0 93px;
 }
-.info__namber {
-  text-align: center;
-  color: white;
-  font-family: 'BebasNeue';
-  font-size: 58px;
+
+.footer__article {
+  .footerArticle();
 }
-.mail {
-  text-align: center;
-  color: white;
-  font-family: 'BebasNeue';
-  margin: 22px 0 27px;
-  .btnMail {
-    background: transparent;
-    padding: 30px 128px;
-    border: 5px solid #FFFFFF;
-    letter-spacing: 1px;
-    letter-spacing: 1px;
-    font-size: 60px;
-  }
-  .h4__text {
-    color: #FFFFFF;
-  }
-  .sendbtn {
-    background: #e2534b;
-    border-color: transparent;
-    &:hover {
-      background: #f80e01;
-    }
-  }
-  .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
-    outline: none;
-    outline-offset: 0;
-    background: transparent;
-    border-color: #FFFFFF;
-  }
-  .modal-content {
-    background: transparent;
-  }
-  .modal-dialog {
-    background: rgba(78, 70, 76, 0.7);
+.footerLeft__column,
+.footerRigt__column {
+  padding-left: 55px;
+}
+.footerInfo {
+  font-family: 'LatoLight';
+  font-size: 18px;
+  color: #848282;
+}
+.formGroup {
+  margin: 0;
+  height: 43px;
+}
+.inputFooter {
+  height: 40px;
+  background: transparent;
+  width: 100%;
+  border: 2px solid #848282;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+//.labelFooter {
+//  margin: 0;
+//}
+.textareaFooter {
+  display: block;
+  width: 100%;
+  height: 81px;
+  background: transparent;
+  padding: 15px 10px;
+}
+.btnFormFooter {
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
+  background: #848282;
+  text-transform: uppercase;
+  color: #333333;
+  font-family: 'LatoSemiBold';
+  font-size: 18px;
+  border-radius: 5px;
+  border: transparent;
+  outline: none;
+  &:active {
+    background: darken(#848282, 20%);
+    box-shadow: 1px 3px 1px lighten(#333333, 10%);
   }
 }
-.adress {
-  text-align: center;
-  font-family: 'BebasNeue';
-  font-size: 30px;
-  color: white;
-  padding-bottom: 110px;
+
+
+
+
+
+
+
+
+
+
+
+
+.footer__bottom {
+  background: #5a5a59;
+  height: 64px;
 }
-.right {
-  text-align: center;
-  font-family: 'OpenSansBold';
-  font-size: 14px;
-  color: white;
-  padding-bottom: 36px;
+.reserved {
+  span {
+    font-family: 'LatoLight';
+    font-size: 18px;
+    color: #949393;
+  }
 }

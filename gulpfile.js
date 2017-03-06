@@ -28,7 +28,8 @@ gulp.task("less", function() {
 gulp.task("bower-css", function() {
 	return gulp.src([
 			"src/bower/bootstrap/dist/css/bootstrap.css",
-			"src/bower/toastr/toastr.min.css"
+			"src/bower/toastr/toastr.min.css",
+			"src/bower/font-awesome/css/font-awesome.min.css"
 		])
 	.pipe(sourcemaps.init()) //ініціалізація кроків
 	.pipe(nano())
@@ -45,7 +46,9 @@ gulp.task("images", function() {
 gulp.task("fonts", function() {
 	return gulp.src([
 		"src/bower/bootstrap/dist/fonts/*.*",
-		"src/fonts/**/*.*"
+		"src/fonts/**/*.*",
+        "src/fonts/font-awesome/**/*.*"
+
 	])
 		.pipe(gulp.dest('dist/fonts'));
 });

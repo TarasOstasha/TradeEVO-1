@@ -49,8 +49,20 @@ body {
   .sign__up {
     border: 2px solid #FFFFFF;
     border-radius: 5px;
+    &:hover {
+      //background: #fa693c;
+      border: 2px solid #fa693c;
+    }
   }
 }
+.sign__upClick:hover {
+  background: #fa693c;
+  border-radius: 5px;
+}
+//.sign__upClick > .sign__up:hover {
+//  background: #fa693c;
+//  border: 2px solid #fa693c;
+//}
 .leftMenu {
   margin-right: 65px;
 }
@@ -124,9 +136,17 @@ body {
 }
 .startBtn {
   .startBTN();
+  &:active {
+    background: darken(#fa693c, 20%);
+    box-shadow: 1px 3px 1px lighten(#80361f, 10%);
+  }
 }
 .getStartBtn {
   .getStartBtn();
+  &:active {
+    background: darken(#2892d7, 20%);
+    box-shadow: 1px 3px 1px lighten(#124160, 10%);
+  }
 }
 .btnHeader {
   margin-top: 23px;
